@@ -1,0 +1,71 @@
+.container-fluid {
+	padding:0px;
+}
+
+.first {
+	min-height: 100vh;
+	background-color: white;
+}
+.second {
+	height: 100vh;
+	background-color:  black;
+	padding: 0px;
+}
+.second {
+	background: url("../img/one.jpg"); 
+}
+
+
+#lol{
+	height: 100vh;
+	background-color: black;
+	/*background: url("../img/one.jpg");*/
+	/*background-clip: content-box;*/
+
+}
+.nothing {
+	padding: 0px;
+}
+
+}
+
+.passion {
+	margin-top: 300px;
+}
+
+.passion h2, h3, {
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+p, #filmName {
+
+	font-family: 'Quicksand', sans-serif;
+}
+
+#playlist {
+}
+
+hr.style9 {
+	border-top: 1px dashed #8c8b8b;
+	border-bottom: 1px dashed #fff;
+	margin: 0px;
+}
+
+.map {
+	background-image: url("../img/map.jpg");
+	background-color: #ececec;
+	height: 50vh;
+}
+
+.kontakt {
+	background-color: #6f6f6f;
+		height: 50vh;
+		text-align: center;
+		padding-top: 120px;
+		color: white;
+}
+
+.kontakt h2, .kontakt h3 {
+	color: black;
+	opacity: 0.2;
+}
