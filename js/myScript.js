@@ -25,19 +25,8 @@ function preloader()
 }
 
 
-/*my_image = new Image();
 
-my_image.onload = function(){
-	console.log("loaded");
-}
-
-my_image.src = "img/testOne.jpg";
-
-*/
-
-
-
-var diff = ["one","two","three","four","five","six","sever","eight","nine","ten"]
+var diff = ["one","two","three","four","five","six","seven","eight","nine","ten"]
 
 var seasonOne = {
 	filmNumber : ['One','Two','Three','Four','Five','Six','Seven','Eight','Nine','Ten'],
@@ -46,19 +35,15 @@ var seasonOne = {
 				  '18/04/2014','23/04/2015','21/04/2015','28/04/2016',]
 };
 
-/*
-var movieNames = ["pokemon", "pokemon2","pokemon3","pokemon4","pokemon5",
-				  "pokemon6","pokemon7","pokemon8","pokemon9","pokemon10"]
+  
 
-var movieColor = ["blue","red","yellow","green","purple","grey","pink"]		*/		  
-
-var space = "col-sm-12";
 
 addToPlaylist()
 
 function addToPlaylist(){
 
 	for(i = 0 ; i < 10 ; i++){
+
 	document.getElementById("filmNumberOne").innerHTML += 
 	'<p id='+ diff[i] + '>' + seasonOne.filmNumber[i] + "</p>";
 
@@ -71,15 +56,15 @@ function addToPlaylist(){
 
 
 	document.getElementById("secondSeason").innerHTML +=
-	'<div class=' + 'col-md-12' + '>' +
-	'<div class=' + 'col-md-6 col-sm-4' + '>' + '<p>First film</p>' + '</div>' +
-	'<div class=' + 'col-md-2 col-sm-4' + '>' + '<p>Killer</p>' + '</div>' +
-	'<div class=' + 'col-md-2 col-sm-4' + '>' + '<p>15/03/2014</p>' + '</div>' +
-	'</div>' ;
+	'<div id=' + seasonOne.filmN[i] + '>' +
+	'<div class=' + 'col-md-6' + '>' + '<p>First film</p>' + '</div>' +
+	'<div class=' + 'col-md-2' + '>' + '<p>Killer</p>' + '</div>' +
+	'<div class=' + 'col-md-2' + '>' + '<p>15/03/2014</p>' + '</div>';
+
 
 	}
-}
 
+}
 
 function preloader() 
 
@@ -87,9 +72,13 @@ function preloader()
 
 heavyImage = new Image(); 
 heavyImage2 = new Image(); 
+heavyImage3 = new Image(); 
+heavyImage4 = new Image(); 
 
 heavyImage.src = "file:///Users/Rene/Documents/git/awwwards-01/img/testOne.jpg";
-heavyImage2.src = "img/testTwo.jpg";
+heavyImage2.src = "file:///Users/Rene/Documents/git/awwwards-01/img/testTwo.jpg";
+heavyImage2.src = "file:///Users/Rene/Documents/git/awwwards-01/img/testThree.jpg";
+heavyImage2.src = "file:///Users/Rene/Documents/git/awwwards-01/img/testFour.jpg";
 
 }
 
@@ -99,28 +88,81 @@ function myFunction(){
 	document.getElementById("nice").src="file:///Users/Rene/Documents/git/awwwards-01/img/testOne.jpg";
 }
 
-/*var color = "red";
 
-document.getElementById("one").addEventListener("mouseover", changeColor1);
+/* CHANGE IMG WHEN HOVER OVER TEXT (SEASON ONE) */
+
+document.getElementById("one").addEventListener("mouseover", changeImage1);
 document.getElementById("two").addEventListener("mouseover", changeColor2);
+document.getElementById("three").addEventListener("mouseover", changeImage3);
+document.getElementById("four").addEventListener("mouseover", changeColor4);
+document.getElementById("five").addEventListener("mouseover", changeImage5);
+document.getElementById("six").addEventListener("mouseover", changeColor6);
+document.getElementById("seven").addEventListener("mouseover", changeImage7);
+document.getElementById("eight").addEventListener("mouseover", changeColor8);
+document.getElementById("nine").addEventListener("mouseover", changeImage9);
+document.getElementById("ten").addEventListener("mouseover", changeColor10);
 
 
 
 
-function changeColor1 (){
-		document.getElementById("lol").src = my_image;
+function changeImage1 (){
+		document.getElementById("nice").src="file:///Users/Rene/Documents/git/awwwards-01/img/testOne.jpg";
+		/*console.log("change image");*/ /* MESSAGE BACK TO SEE IF FUNCTION GOES */
 	}
 
-
-
 function changeColor2 (){
-	document.getElementById("lol").style.background = "green";
+		document.getElementById("nice").src="file:///Users/Rene/Documents/git/awwwards-01/img/testTwo.jpg";
 }
+
+function changeImage3 (){
+		document.getElementById("nice").src="file:///Users/Rene/Documents/git/awwwards-01/img/testThree.jpg";
+		/*console.log("change image");*/ /* MESSAGE BACK TO SEE IF FUNCTION GOES */
+	}
+
+function changeColor4 (){
+		document.getElementById("nice").src="file:///Users/Rene/Documents/git/awwwards-01/img/testFour.jpg";
+}
+
+function changeImage5 (){
+		document.getElementById("nice").src="file:///Users/Rene/Documents/git/awwwards-01/img/testOne.jpg";
+		/*console.log("change image");*/ /* MESSAGE BACK TO SEE IF FUNCTION GOES */
+	}
+
+function changeColor6 (){
+		document.getElementById("nice").src="file:///Users/Rene/Documents/git/awwwards-01/img/testTwo.jpg";
+}
+
+function changeImage7 (){
+		document.getElementById("nice").src="file:///Users/Rene/Documents/git/awwwards-01/img/testThree.jpg";
+		/*console.log("change image");*/ /* MESSAGE BACK TO SEE IF FUNCTION GOES */
+	}
+
+function changeColor8 (){
+		document.getElementById("nice").src="file:///Users/Rene/Documents/git/awwwards-01/img/testFour.jpg";
+}
+
+function changeImage9 (){
+		document.getElementById("nice").src="file:///Users/Rene/Documents/git/awwwards-01/img/testThree.jpg";
+		/*console.log("change image");*/ /* MESSAGE BACK TO SEE IF FUNCTION GOES */
+	}
+
+function changeColor10 (){
+		document.getElementById("nice").src="file:///Users/Rene/Documents/git/awwwards-01/img/testFour.jpg";
+}
+
+
+
+
+/*
+
+season one hover effect added / color.
+each episode in season one have their own image when mouseover.
+
+
+output season one divs to horizontal insted og vertical
+
+
 */
-
-
-
-
 
 
 

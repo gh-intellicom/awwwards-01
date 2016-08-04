@@ -16,8 +16,9 @@
 }
 
 
-#lol{
+#lol img{
 	height: 100vh;
+	width:  50vw;
 	background-color: black;
 /*	background: url("../img/testTwo.jpg"); */
 
@@ -68,4 +69,7 @@ hr.style9 {
 }
 
 
-eaklfnaefale
+p:hover{
+	background-color: #e4e4e4;
+}
+
