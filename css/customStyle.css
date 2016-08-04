@@ -16,10 +16,12 @@
 }
 
 
-#lol{
+#lol img{
 	height: 100vh;
+	width:  50vw;
 	background-color: black;
-	/*background: url("../img/one.jpg");*/
+/*	background: url("../img/testTwo.jpg"); */
+
 	/*background-clip: content-box;*/
 
 }
@@ -39,9 +41,6 @@
 p, #filmName {
 
 	font-family: 'Quicksand', sans-serif;
-}
-
-#playlist {
 }
 
 hr.style9 {
@@ -70,4 +69,7 @@ hr.style9 {
 }
 
 
-eaklfnaefale
+p:hover{
+	background-color: #e4e4e4;
+}
+
