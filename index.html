@@ -32,11 +32,16 @@
 		<link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300i" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
 
+
 		<meta charset="utf-8">
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCr_JjmBax5eoFFyZiTiHh3Xgv01U5bqrc&callback=initMap">
+    </script>
 
 	</head>
 
 	<body onLoad="javascript:preloader()">
+
 
 
 <body>
@@ -75,25 +80,25 @@
 
 <!-- FIRST SEASON -->
 
-	<div class="infoText container-fluid">
+	<div class="infoText">
 		
-		<div class="seasonInfo col-md-6">
+		<div class="seasonInfo">
 			<hr class="style9">
-			<div class="col-md-12">
+			<div class="col-md-12 col-sm-12 col-xs-12">
 				<div id="season-1"><h3>Season One</h3></div>
 			</div>
 		
-			<div class="col-md-5 col-md-offset-1">
+			<div class="col-md-5 col-sm-4 col-xs-3 col-md-offset-1 col-xs-offset-1">
 				<div id="filmNumberOne">	<!-- Season One / Numbers -->
 
 				</div>
 			</div>
-			<div class="col-md-3">
+			<div class="col-md-3 col-sm-4 col-xs-4">
 				<div id="filmNameOne">		<!-- Season One / Names -->
 
 				</div>
 			</div>
-			<div class="col-md-3">
+			<div class="col-md-3 col-sm-4 col-xs-4">
 				<div id="filmDateOne">		<!-- Season One / Dates -->
 
 				</div>
@@ -101,22 +106,22 @@
 
 <!-- SECOND SEASON -->
 
-			<div class="season-2 col-md-12">
+			<div class="season-2 col-md-12 col-sm-12 col-xs-12">
 				<h3>Season Two</h3>
 					<hr class="style9" style="padding-bottom:10px;">
 			</div>
 
-			<div class="col-md-5 col-md-offset-1">
+			<div class="col-md-5 col-sm-4 col-xs-3 col-md-offset-1 col-xs-offset-1">
 				<div id="seasonNumberTwo">	<!-- Season One / Numbers -->
 
 				</div>
 			</div>
-			<div class="col-md-3">
+			<div class="col-md-3 col-sm-4 col-xs-4">
 				<div id="seasonNameTwo">		<!-- Season One / Names -->
 
 				</div>
 			</div>
-			<div class="col-md-3">
+			<div class="col-md-3 col-sm-4 col-xs-4">
 				<div id="seasonDateTwo">		<!-- Season One / Dates -->
 				</div>
 			</div>
@@ -133,23 +138,26 @@
 		</div> -->
 	
 	<div class="col-md-12 sosial">	
-	
-		<div class="map col-md-6"></div>
-
-		
-	</div>
-		<div class="col-md-12 sosial">	
-		<div class="kontakt col-md-6">
+		<div class="kontakt">
 			<h2>Adresse</h2>
 			<p>bjørnlia 3215</p>
 			<h3>Email</h3>
 			<p>noway@aligator.no</p>
 			<h2>Legit name</h2>
 			<p>Jason Bourne</p>
-		</div>	</div>
+		</div>		    
+   
+	</div>
+		<div class="col-md-12 sosial">	
+			<div id="map"></div>
+	</div>
+
 </body>
 
 <script src="js/myScript.js"></script>
+
+ 
+
 
 </html>
 

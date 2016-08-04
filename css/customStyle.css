@@ -2,10 +2,16 @@
     #mainImageBox {
         display: none;
     }
+    .kontakt, #map , .infoText {
+    	width: 100vw !important;
+    }
 }
 
-
-
+@media only screen and (min-width: 1020px) {
+	.kontakt {
+		padding-top: 8% !important;
+	}
+}
 
 .container-fluid {
 	padding:0px;
@@ -71,16 +77,16 @@ hr.style9 {
 }
 
 .map {
-	background-image: url("../img/map.jpg");
+	/*background-image: url("../img/map.jpg");*/
 	background-color: #ececec;
 	height: 50vh;
 }
 
 .kontakt {
-	background-color: #6f6f6f;
+		background-color: #6f6f6f;
 		height:50vh;
 		text-align: center;
-		padding-top: 120px;
+		padding-top: 15%;
 		color: white;
 }
 
@@ -91,10 +97,12 @@ hr.style9 {
 
 
 .infoText {
-	height: 100vh;
+	min-height: 100vh;
+	max-height: 100vh;
+	width: 50vw;
 }
 
-p:hover{
+#filmNumberOne p:hover{
 	background-color: #e4e4e4;
 }
 
@@ -105,6 +113,12 @@ p:hover{
 .sosial {
 	padding: 0px;
 }
+
+#map {
+width: 50vw;
+height: 50vh;
+      }
+
 
 /*
 box DONE

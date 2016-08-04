@@ -1,3 +1,4 @@
+
 function preloader() 
 
 {
@@ -76,11 +77,13 @@ heavyImage = new Image();
 heavyImage2 = new Image(); 
 heavyImage3 = new Image(); 
 heavyImage4 = new Image(); 
+heavyImage5 = new Image(); 
 
 heavyImage.src = "file:///Users/Rene/Documents/git/awwwards-01/img/testOne.jpg";
 heavyImage2.src = "file:///Users/Rene/Documents/git/awwwards-01/img/testTwo.jpg";
-heavyImage2.src = "file:///Users/Rene/Documents/git/awwwards-01/img/testThree.jpg";
-heavyImage2.src = "file:///Users/Rene/Documents/git/awwwards-01/img/testFour.jpg";
+heavyImage3.src = "file:///Users/Rene/Documents/git/awwwards-01/img/testThree.jpg";
+heavyImage4.src = "file:///Users/Rene/Documents/git/awwwards-01/img/testFour.jpg";
+heavyImage5.src = "file:///Users/Rene/Documents/git/awwwards-01/img/testFive.jpg";
 
 }
 
@@ -108,7 +111,7 @@ document.getElementById("ten").addEventListener("mouseover", changeColor10);
 
 
 function changeImage1 (){
-		document.getElementById("mainImage").src="file:///Users/Rene/Documents/git/awwwards-01/img/testOne.jpg";
+		document.getElementById("mainImage").src="file:///Users/Rene/Documents/git/awwwards-01/img/testFive.gif";
 		/*console.log("change image");*/ /* MESSAGE BACK TO SEE IF FUNCTION GOES */
 	}
 
@@ -153,7 +156,13 @@ function changeColor10 (){
 }
 
 
-
+      function initMap() {
+        var mapDiv = document.getElementById('map');
+        var map = new google.maps.Map(mapDiv, {
+            center: {lat: 44.540, lng: -78.546},
+            zoom: 8
+        });
+      }
 
 /*
 
