@@ -1,38 +1,39 @@
-/*
-document.getElementById("season-1").onmouseover = function() {mouseOver()};
-document.getElementById("season-1").onmouseout = function() {mouseOut()};
-*/
+function preloader() 
 
-/*
-
-function mouseOver(){
-
-	document.getElementById("nothing").style.background = "#9e9c9c";
-	console.log("red")
-}
-
-function mouseOut(){
-	document.getElementById("nothing").style.background = "black";
-}
-*/
-
-/*var my_image = new Image();
-
-// we will call this function when the image has finished loading
-function notify_complete()
 {
-    alert('The image has been loaded into the browser cache.');
+     // counter
+     var i = 0;
+
+
+     // create object
+     imageObj = new Image();
+
+
+     // set image list
+     images = new Array();
+     images[0]="img/testOne.jpg"
+     images[1]="img/testTwo.jpg"
+
+
+
+     // start preloading
+     for(i=0; i<=2; i++) 
+     {
+          imageObj.src=images[i];
+     }
+
 }
 
-function load_image()
-{
-    // call the notify_complete function when the image has loaded
-    my_image.onload = notify_complete;
 
-    // load the image
-    my_image.src = "img/gallery/1.jpg";
-}*/
+/*my_image = new Image();
 
+my_image.onload = function(){
+	console.log("loaded");
+}
+
+my_image.src = "img/testOne.jpg";
+
+*/
 
 
 
@@ -51,7 +52,7 @@ var movieNames = ["pokemon", "pokemon2","pokemon3","pokemon4","pokemon5",
 
 var movieColor = ["blue","red","yellow","green","purple","grey","pink"]		*/		  
 
-
+var space = "col-sm-12";
 
 addToPlaylist()
 
@@ -66,13 +67,39 @@ function addToPlaylist(){
 
 	document.getElementById("filmDateOne").innerHTML +=
 	'<p>' + seasonOne.filmDate[i] + "</p>";
-	}	
+		
+
+
+	document.getElementById("secondSeason").innerHTML +=
+	'<div class=' + 'col-md-12' + '>' +
+	'<div class=' + 'col-md-6 col-sm-4' + '>' + '<p>First film</p>' + '</div>' +
+	'<div class=' + 'col-md-2 col-sm-4' + '>' + '<p>Killer</p>' + '</div>' +
+	'<div class=' + 'col-md-2 col-sm-4' + '>' + '<p>15/03/2014</p>' + '</div>' +
+	'</div>' ;
+
+	}
+}
+
+
+function preloader() 
+
+{
+
+heavyImage = new Image(); 
+heavyImage2 = new Image(); 
+
+heavyImage.src = "file:///Users/Rene/Documents/git/awwwards-01/img/testOne.jpg";
+heavyImage2.src = "img/testTwo.jpg";
+
 }
 
 
 
+function myFunction(){
+	document.getElementById("nice").src="file:///Users/Rene/Documents/git/awwwards-01/img/testOne.jpg";
+}
 
-var color = "red";
+/*var color = "red";
 
 document.getElementById("one").addEventListener("mouseover", changeColor1);
 document.getElementById("two").addEventListener("mouseover", changeColor2);
@@ -81,21 +108,15 @@ document.getElementById("two").addEventListener("mouseover", changeColor2);
 
 
 function changeColor1 (){
-	if(color == "red"){
-		document.getElementById("lol").style.background = "white";
+		document.getElementById("lol").src = my_image;
 	}
-	else {
-	color = document.getElementById("lol").style.background = "red";
-}}
-
-
 
 
 
 function changeColor2 (){
 	document.getElementById("lol").style.background = "green";
 }
-
+*/
 
 
 
