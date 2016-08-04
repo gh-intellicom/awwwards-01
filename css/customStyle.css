@@ -1,20 +1,44 @@
+@media only screen and (max-width: 1170px) {
+    #mainImageBox {
+        display: none;
+    }
+}
+
+
+
+
 .container-fluid {
 	padding:0px;
 }
 
-.first {
+.IntroBox {
 	min-height: 100vh;
 	background-color: white;
+	height: 100vh;
 }
-.second {
+
+.introText {
+	margin-top: 30%;
+}
+
+#mainImageBox {
 	height: 100vh;
 	background-color:  black;
 	padding: 0px;
-}
-.second {
-	background: url("../img/one.jpg"); 
-}
 
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 50vw;
+    z-index: 100;
+}
+#mainImage {
+	/*background: url("../img/one.jpg"); */
+	/*width: inherit;*/
+	height: inherit;%;
+
+
+}
 
 #lol img{
 	height: 100vh;
@@ -29,11 +53,6 @@
 	padding: 0px;
 }
 
-
-.passion {
-	margin-top: 300px;
-}
-
 .passion h2, h3, {
 	font-family: 'Josefin Sans', sans-serif;
 }
@@ -46,7 +65,9 @@ p, #filmName {
 hr.style9 {
 	border-top: 1px dashed #8c8b8b;
 	border-bottom: 1px dashed #fff;
-	margin: 0px;
+	margin: 10px;
+	padding-left:5%;
+	padding-right:5%;
 }
 
 .map {
@@ -57,7 +78,7 @@ hr.style9 {
 
 .kontakt {
 	background-color: #6f6f6f;
-		height: 50vh;
+		height:50vh;
 		text-align: center;
 		padding-top: 120px;
 		color: white;
@@ -69,7 +90,27 @@ hr.style9 {
 }
 
 
+.infoText {
+	height: 100vh;
+}
+
 p:hover{
 	background-color: #e4e4e4;
 }
 
+.seasonInfo {
+	height: 100vh;
+}
+
+.sosial {
+	padding: 0px;
+}
+
+/*
+box DONE
+box 
+box 
+box 
+box 
+box 
+*/
