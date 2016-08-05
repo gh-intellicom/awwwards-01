@@ -31,7 +31,8 @@ var diff = ["one","two","three","four","five","six","seven","eight","nine","ten"
 
 var seasonOne = {
 	filmNumber : ['One','Two','Three','Four','Five','Six','Seven','Eight','Nine','Ten'],
-	filmName   : ['Destruction Derby','Hitman','Dead Or Alive'],
+	filmName   : ['Destruction Derby','Hitman','Dead Or Alive','Never Say Never','Disney',
+				  'Peter Pan','Gorilla Bandidos','Flapjack','J.C','Goodmann'],
 	filmDate   : ['16/04/2013','06/04/2013','16/04/2013','12/04/2014','15/04/2014','12/04/2014',
 				  '18/04/2014','23/04/2015','21/04/2015','28/04/2016',]
 };
@@ -111,7 +112,7 @@ document.getElementById("ten").addEventListener("mouseover", changeColor10);
 
 
 function changeImage1 (){
-		document.getElementById("mainImage").src="file:///Users/Rene/Documents/git/awwwards-01/img/testFive.gif";
+		document.getElementById("mainImage").src="file:///Users/Rene/Documents/git/awwwards-01/img/testOne.jpg";
 		/*console.log("change image");*/ /* MESSAGE BACK TO SEE IF FUNCTION GOES */
 	}
 
@@ -129,7 +130,7 @@ function changeColor4 (){
 }
 
 function changeImage5 (){
-		document.getElementById("mainImage").src="file:///Users/Rene/Documents/git/awwwards-01/img/testOne.jpg";
+		document.getElementById("mainImage").src="file:///Users/Rene/Documents/git/awwwards-01/img/testFive.jpg";
 		/*console.log("change image");*/ /* MESSAGE BACK TO SEE IF FUNCTION GOES */
 	}
 
