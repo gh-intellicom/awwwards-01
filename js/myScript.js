@@ -53,14 +53,16 @@ function addToPlaylist(){
 	document.getElementById("filmDateOne").innerHTML +=
 	'<p>' + seasonOne.filmDate[i] + "</p>";
 		
+/* Season Two if there coming */
 
+	document.getElementById("seasonNumberTwo").innerHTML += 
+	'<p id='+ diff[i] + '>' + seasonOne.filmNumber[i] + "</p>";
 
-	document.getElementById("secondSeason").innerHTML +=
-	'<div id=' + seasonOne.filmN[i] + '>' +
-	'<div class=' + 'col-md-6' + '>' + '<p>First film</p>' + '</div>' +
-	'<div class=' + 'col-md-2' + '>' + '<p>Killer</p>' + '</div>' +
-	'<div class=' + 'col-md-2' + '>' + '<p>15/03/2014</p>' + '</div>';
+	document.getElementById("seasonNameTwo").innerHTML +=
+	'<p>' + seasonOne.filmName[i] + "</p>";
 
+	document.getElementById("seasonDateTwo").innerHTML +=
+	'<p>' + seasonOne.filmDate[i] + "</p>";
 
 	}
 
@@ -106,48 +108,48 @@ document.getElementById("ten").addEventListener("mouseover", changeColor10);
 
 
 function changeImage1 (){
-		document.getElementById("nice").src="file:///Users/Rene/Documents/git/awwwards-01/img/testOne.jpg";
+		document.getElementById("mainImage").src="file:///Users/Rene/Documents/git/awwwards-01/img/testOne.jpg";
 		/*console.log("change image");*/ /* MESSAGE BACK TO SEE IF FUNCTION GOES */
 	}
 
 function changeColor2 (){
-		document.getElementById("nice").src="file:///Users/Rene/Documents/git/awwwards-01/img/testTwo.jpg";
+		document.getElementById("mainImage").src="file:///Users/Rene/Documents/git/awwwards-01/img/testTwo.jpg";
 }
 
 function changeImage3 (){
-		document.getElementById("nice").src="file:///Users/Rene/Documents/git/awwwards-01/img/testThree.jpg";
+		document.getElementById("mainImage").src="file:///Users/Rene/Documents/git/awwwards-01/img/testThree.jpg";
 		/*console.log("change image");*/ /* MESSAGE BACK TO SEE IF FUNCTION GOES */
 	}
 
 function changeColor4 (){
-		document.getElementById("nice").src="file:///Users/Rene/Documents/git/awwwards-01/img/testFour.jpg";
+		document.getElementById("mainImage").src="file:///Users/Rene/Documents/git/awwwards-01/img/testFour.jpg";
 }
 
 function changeImage5 (){
-		document.getElementById("nice").src="file:///Users/Rene/Documents/git/awwwards-01/img/testOne.jpg";
+		document.getElementById("mainImage").src="file:///Users/Rene/Documents/git/awwwards-01/img/testOne.jpg";
 		/*console.log("change image");*/ /* MESSAGE BACK TO SEE IF FUNCTION GOES */
 	}
 
 function changeColor6 (){
-		document.getElementById("nice").src="file:///Users/Rene/Documents/git/awwwards-01/img/testTwo.jpg";
+		document.getElementById("mainImage").src="file:///Users/Rene/Documents/git/awwwards-01/img/testTwo.jpg";
 }
 
 function changeImage7 (){
-		document.getElementById("nice").src="file:///Users/Rene/Documents/git/awwwards-01/img/testThree.jpg";
+		document.getElementById("mainImage").src="file:///Users/Rene/Documents/git/awwwards-01/img/testThree.jpg";
 		/*console.log("change image");*/ /* MESSAGE BACK TO SEE IF FUNCTION GOES */
 	}
 
 function changeColor8 (){
-		document.getElementById("nice").src="file:///Users/Rene/Documents/git/awwwards-01/img/testFour.jpg";
+		document.getElementById("mainImage").src="file:///Users/Rene/Documents/git/awwwards-01/img/testFour.jpg";
 }
 
 function changeImage9 (){
-		document.getElementById("nice").src="file:///Users/Rene/Documents/git/awwwards-01/img/testThree.jpg";
+		document.getElementById("mainImage").src="file:///Users/Rene/Documents/git/awwwards-01/img/testThree.jpg";
 		/*console.log("change image");*/ /* MESSAGE BACK TO SEE IF FUNCTION GOES */
 	}
 
 function changeColor10 (){
-		document.getElementById("nice").src="file:///Users/Rene/Documents/git/awwwards-01/img/testFour.jpg";
+		document.getElementById("mainImage").src="file:///Users/Rene/Documents/git/awwwards-01/img/testFour.jpg";
 }
 
 
