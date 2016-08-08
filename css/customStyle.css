@@ -1,11 +1,25 @@
-@media only screen and (max-width: 1170px) {
+@media only screen and (min-width: 1680px ) {
+	.kontakt {
+		padding-top: 15%;
+	}
+}
+
+@media only screen and (max-width: 1000px) {
+    .kontakt, #map , .infoText {
+    	width: 100vw !important;
+    }
+
     #mainImageBox {
-        display: none;
+    	display: none;
     }
 }
 
+@media only screen and (min-width: 1020px) and (max-width: 1024px)  {
+}
 
+@media only screen and (min-width: 480px) and (max-width: 1020px){
 
+}
 
 .container-fluid {
 	padding:0px;
@@ -23,7 +37,6 @@
 
 #mainImageBox {
 	height: 100vh;
-	background-color:  black;
 	padding: 0px;
 
     position: fixed;
@@ -31,13 +44,30 @@
     right: 0;
     width: 50vw;
     z-index: 100;
+
 }
 #mainImage {
 	/*background: url("../img/one.jpg"); */
+	height: inherit;
 	/*width: inherit;*/
-	height: inherit;%;
+
+	padding-top: 10%;
+	padding-bottom: 10%;
+	
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+
+	/* Adding shadow to Main IMG */
+	-webkit-filter: drop-shadow(20px 20px 20px black);
+  	filter: drop-shadow(20px 20px 20px black);
 
 
+}
+
+#test {
+	background: url(../img/testOne.jpg); 
+	height: 100vh;
 }
 
 #lol img{
@@ -53,7 +83,7 @@
 	padding: 0px;
 }
 
-.passion h2, h3, {
+.passion h2, .kontakt h3, .infoText h3 {
 	font-family: 'Josefin Sans', sans-serif;
 }
 
@@ -71,30 +101,25 @@ hr.style9 {
 }
 
 .map {
-	background-image: url("../img/map.jpg");
+	/*background-image: url("../img/map.jpg");*/
 	background-color: #ececec;
 	height: 50vh;
-}
 
-.kontakt {
-	background-color: #6f6f6f;
-		height:50vh;
-		text-align: center;
-		padding-top: 120px;
-		color: white;
+    -webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
+    filter: grayscale(100%);
 }
-
-.kontakt h2, .kontakt h3 {
-	color: black;
-	opacity: 0.2;
-}
-
 
 .infoText {
-	height: 100vh;
+	min-height: 100vh;
+	max-height: 100vh;
+	width: 50vw;
 }
 
-p:hover{
+#filmNumberOne p:hover{
+	background-color: #e4e4e4;
+}
+
+#seasonNumberTwo p:hover{
 	background-color: #e4e4e4;
 }
 
@@ -106,11 +131,39 @@ p:hover{
 	padding: 0px;
 }
 
-/*
-box DONE
-box 
-box 
-box 
-box 
-box 
-*/
+#map {
+	width: 50vw;
+	height: 50vh;
+      }
+
+.kontakt {
+		/*background-color: #6f6f6f;*/
+		height:50vh;
+		text-align: center;
+		
+		color: white;
+		background-color:#737373; 
+}
+
+.kontakt h2, .kontakt h3 {
+	color: white;
+	/*opacity: 0.2;*/
+}
+
+.infoText h3 {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+
+/*#footerImg {
+	background-image: url("../img/forrest.png");
+position: absolute;
+	z-index: -1;
+
+	left: 0px;
+	width: 100%;
+	height: 50vh;
+	background-size: cover;
+}*/
+

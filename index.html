@@ -26,17 +26,26 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-		<link rel="stylesheet" type="text/css" href="css/customStyle.css">
+		<link rel="alternative stylesheet" type="text/css" href="css/customStyle.css">
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+
 
 		<!-- Fonts -->
 		<link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300i" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
 
-		<meta charset="utf-8">
 
+		<meta charset="utf-8">
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCr_JjmBax5eoFFyZiTiHh3Xgv01U5bqrc&callback=initMap">
+    </script>
+
+	<!-- <script src="jq/jquery-3.1.0.min.js" type="text/javascript" defer="defer"></script> -->
 	</head>
 
-	<body onLoad="javascript:preloader()">
+
 
 
 <body>
@@ -61,7 +70,8 @@
 
 		<div class="col-md-6" style="padding:0px;">		
 			<div id="mainImageBox">
-				<img id="mainImage" src="file:///Users/Rene/Documents/git/awwwards-01/img/testTwo.jpg">
+				<img id="test" src="img/background1.jpg" style="width: 100vw; z-index:-1; position: absolute; ">
+				<img id="mainImage" src="file:///Users/Rene/Documents/git/awwwards-01/img/imgGallery/One.jpg" style="display:none;">
 		</div></div>
 
 		<div class="col-md-6">	
@@ -75,25 +85,25 @@
 
 <!-- FIRST SEASON -->
 
-	<div class="infoText container-fluid">
+	<div class="infoText">
 		
-		<div class="seasonInfo col-md-6">
+		<div class="seasonInfo">
 			<hr class="style9">
-			<div class="col-md-12">
+			<div class="col-md-12 col-sm-12 col-xs-12">
 				<div id="season-1"><h3>Season One</h3></div>
 			</div>
 		
-			<div class="col-md-5 col-md-offset-1">
+			<div class="col-md-3 col-sm-4 col-xs-3 col-md-offset-1 col-xs-offset-1">
 				<div id="filmNumberOne">	<!-- Season One / Numbers -->
 
 				</div>
 			</div>
-			<div class="col-md-3">
+			<div class="col-md-4 col-sm-4 col-xs-4">
 				<div id="filmNameOne">		<!-- Season One / Names -->
 
 				</div>
 			</div>
-			<div class="col-md-3">
+			<div class="col-md-3 col-sm-4 col-xs-4">
 				<div id="filmDateOne">		<!-- Season One / Dates -->
 
 				</div>
@@ -101,55 +111,59 @@
 
 <!-- SECOND SEASON -->
 
-			<div class="season-2 col-md-12">
-				<h3>Season Two</h3>
+			<div class="season-2 col-md-12 col-sm-12 col-xs-12">
+				<div id="season-2"><h3>Season One</h3></div>
 					<hr class="style9" style="padding-bottom:10px;">
 			</div>
 
-			<div class="col-md-5 col-md-offset-1">
+			<div class="col-md-3 col-sm-4 col-xs-3 col-md-offset-1 col-xs-offset-1">
 				<div id="seasonNumberTwo">	<!-- Season One / Numbers -->
 
 				</div>
 			</div>
-			<div class="col-md-3">
+			<div class="col-md-4 col-sm-4 col-xs-4">
 				<div id="seasonNameTwo">		<!-- Season One / Names -->
 
 				</div>
 			</div>
-			<div class="col-md-3">
+			<div class="col-md-3 col-sm-4 col-xs-4">
 				<div id="seasonDateTwo">		<!-- Season One / Dates -->
 				</div>
 			</div>
 
 	</div>
-
-
-	
-<!-- 		<div class="nothing col-md-6">
-			<div id="lol">
-				<img id="nice">
-			</div>
-		
-		</div> -->
 	
 	<div class="col-md-12 sosial">	
-	
-		<div class="map col-md-6"></div>
-
-		
+		<img id="footerImg">
+		<div class="kontakt">
+			<div class="col-lg-4 col-lg-offset-0 col-md-10 col-sm-10 col-xs-10 col-xs-offset-1">
+				<h3>Adresse</h3>
+				<p>Nam velit metus, luctus ac bibendum ac, imperdiet vitae erat. 
+				   Pellentesque ac pretium diam</p>
+			</div>
+			<div class="col-lg-4 col-lg-offset-0 col-md-10 col-sm-10 col-xs-10 col-xs-offset-1">
+				<h3>Email</h3>
+				<p>Nam velit metus, luctus ac bibendum ac, imperdiet vitae erat. 
+				   Pellentesque ac pretium diam</p>
+			</div>
+			<div class="col-lg-4 col-lg-offset-0 col-md-10 col-sm-10 col-xs-10 col-xs-offset-1">
+				<h3>Legit name</h3>
+				<p>Nam velit metus, luctus ac bibendum ac, imperdiet vitae erat. 
+				   Pellentesque ac pretium diam</p>
+			</div>
+		</div>		    
+   
 	</div>
 		<div class="col-md-12 sosial">	
-		<div class="kontakt col-md-6">
-			<h2>Adresse</h2>
-			<p>bjørnlia 3215</p>
-			<h3>Email</h3>
-			<p>noway@aligator.no</p>
-			<h2>Legit name</h2>
-			<p>Jason Bourne</p>
-		</div>	</div>
+			<div id="map"></div>
+	</div>
+
 </body>
 
 <script src="js/myScript.js"></script>
+
+ 
+
 
 </html>
 
